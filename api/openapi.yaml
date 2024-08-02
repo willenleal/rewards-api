@@ -91,7 +91,7 @@ components:
           items:
             $ref: '#/components/schemas/Item'
           x-oapi-codegen-extra-tags:
-            validate: required,dive,required
+            validate: required,min=1,dive,required
         total:
           description: The total amount paid on the receipt.
           type: string

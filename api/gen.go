@@ -23,7 +23,7 @@ type Item struct {
 
 // Receipt defines model for Receipt.
 type Receipt struct {
-	Items []Item `json:"items" validate:"required,dive,required"`
+	Items []Item `json:"items" validate:"required,min=1,dive,required"`
 
 	// PurchaseDate The date of the purchase printed on the receipt.
 	PurchaseDate string `json:"purchaseDate" validate:"required,datetime=2006-01-02"`
